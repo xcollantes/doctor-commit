@@ -1,4 +1,19 @@
 #!/bin/bash
 
-java -jar bfg-1.13.0.jar 
+JAR_PATH=`realpath bfg-1.13.0.jar`
+
+
+echo "Using BFG at $JAR_PATH"
+
+# Retrieve Git Repo as Mirror
+if [ $1 == "--git" ]
+  then
+    echo "Cloning: $2"
+    git clone --mirror $2
+	  
+
+else
+  java -jar $JAR_PATH
+fi
+
 
