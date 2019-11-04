@@ -6,7 +6,7 @@ Clean up sensitive data in commits.  Wrapper for BFG Commit Cleaner tool by Robe
 >
 \- About BFG Commit Cleaner tool
 - If BFG is 10 - 720x fast, then this script makes it 1000x faster <br>
-- Stand-alone: Required JAR file ([bfg-1.13.0.jar](bfg-site)) already included.  
+- Stand-alone: Required JAR file ([bfg-1.13.0.jar](site)) already included.  
 
 ## Instructions
 1. `bfg --git [Full Git Repo URL]` Get repo.  Equivalent of `git clone --mirror [Full Repo URL]`
@@ -18,4 +18,5 @@ Clean up sensitive data in commits.  Wrapper for BFG Commit Cleaner tool by Robe
 
 
 Roberto Tyley's [Original program](bfg-site)
-[bfg-site]: https://rtyley.github.io/bfg-repo-cleaner/
+
+[site]: https://rtyley.github.io/bfg-repo-cleaner
