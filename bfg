@@ -6,14 +6,18 @@ JAR_PATH=`realpath bfg-1.13.0.jar`
 echo "Using BFG at $JAR_PATH"
 
 # Retrieve Git Repo as Mirror
-if [ $1 == "--git" ]
+if [ "$1" = "--git" ]  # Takes full git repo url
   then
     echo "Cloning: $2"
     git clone --mirror $2
-	  
-
+elif [ "$1" = "--add" ]  # Go into git repo and git stuff
+  then
+    echo "Git Pruning"
+    (cd $2 && git reflog expire --expire=now --all && git gc --prune=now --aggressive)
+elif [ "$1" = "--push" ]
+  then
+    echo "Git Push"
+    git push
 else
-  java -jar $JAR_PATH
+  java -jar $JAR_PATH "$@"  # Append comandline args
 fi
-
-
