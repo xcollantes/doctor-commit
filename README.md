@@ -17,5 +17,5 @@ Clean up sensitive data in commits.  Wrapper for BFG Commit Cleaner tool by Robe
 
 
 
-Roberto Tyley's Original program: [https://rtyley.github.io/bfg-repo-cleaner](bfg-site)
+Roberto Tyley's [Original program](bfg-site)
 [bfg-site]: https://rtyley.github.io/bfg-repo-cleaner/
