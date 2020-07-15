@@ -15,6 +15,8 @@ Clean up sensitive data in commits.  Wrapper for BFG Commit Cleaner tool by Robe
 4. `bfg --push` or `git push`
 
 
+https://gist.github.com/w0rd-driven/60779ad557d9fd86331734f01c0f69f0
+
 
 
 Roberto Tyley's [Original program](bfg-site)
