@@ -14,6 +14,15 @@ Clean up sensitive data in commits.  Wrapper for BFG Commit Cleaner tool by Robe
 3. `bfg --add` Apply changes
 4. `bfg --push` or `git push`
 
+## password.txt File Example
+```
+PASSWORD1                       # Replace literal string 'PASSWORD1' with '***REMOVED***' (default)
+PASSWORD2==>examplePass         # replace with 'examplePass' instead
+PASSWORD3==>                    # replace with the empty string
+regex:password=\w+==>password=  # Replace, using a regex
+regex:\r(\n)==>$1               # Replace Windows newlines with Unix newlines
+```
+https://gist.github.com/w0rd-driven/60779ad557d9fd86331734f01c0f69f0
 
 https://gist.github.com/w0rd-driven/60779ad557d9fd86331734f01c0f69f0
 
